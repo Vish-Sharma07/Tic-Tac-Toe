@@ -20,7 +20,7 @@ const modalMessage = document.querySelector("#modal-message");
 const modalCloseBtn = document.querySelector("#modal-close-btn");
 
 modalCloseBtn.addEventListener("click", () => {
-    modal.classList.add("hide"); // hide modal on close
+    modal.classList.add("modal-hide"); // hide modal on close
     startNewGame(); //restart the new game
 });
 
