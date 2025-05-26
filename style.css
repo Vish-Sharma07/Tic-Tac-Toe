@@ -12,6 +12,11 @@ body {
     background-position: center;
     text-align: center;
 }
+main {
+    max-width: 960px;
+    margin: auto;
+    padding: 1rem;
+}
 
 .head h1{
     color: #C87619;
@@ -47,7 +52,7 @@ body {
     border-radius: 1rem;
     border: none;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
-    font-size: 8vmin;
+    font-size: 7vw;
     color: #b0413e;
     background-color: #6AA088;;
     transition: all 0.3s ease;
@@ -64,6 +69,10 @@ body {
     font-size: 1.25rem;
     background-color: #FAAD62;
     color: #fff;
+    width: 80%;
+    max-width: 300px;
+    margin: 1rem auto;
+    display: block;
     border-radius: 1rem;
     border: none;
     transition: background-color 0.3s ease;
@@ -82,6 +91,15 @@ body {
 .msg-container {
     height: 30vmin;
     text-align: center;
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.3);
+    z-index: 1000;
 }
 
 .hide {
@@ -148,6 +166,21 @@ body {
     #turn-indicator {
         font-size: 1.25rem;
     }
+    .head h1 {
+        font-size: 3rem;
+    }
+
+    .head h2 {
+        font-size: 1.2rem;
+    }
+
+    .modal-content p {
+        font-size: 1.25rem;
+    }
+
+    #modal-close-btn {
+        font-size: 0.9rem;
+    }
 }
 
 @media (max-width: 600px) {
@@ -185,9 +218,13 @@ body {
 }
 
 .modal-content p{
-    font-size: 1.5rem;
+    font-size: 5vw;
     margin-bottom: 1rem;
 }
+.modal-hide {
+    display: none;
+}
+
 
 #modal-close-btn{
     padding: 0.5rem 1rem;
